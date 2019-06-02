@@ -1,0 +1,193 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family:Helvetica, sans-serif;
+}
+
+body {
+	padding: 3rem;
+	background-color: #595959;
+}
+
+h1{
+		font-size: 3rem;
+}
+
+h2 {
+	font-size: 2rem;
+	color: white;
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+
+h3 {
+	margin-bottom: 20px;
+	font-size: 1.5rem;
+	color: white;
+}
+
+p {
+	font-size: 2rem;
+	line-height: 4rem;
+	color: white;
+}
+
+
+.hero-image {
+	margin-top:3vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/ik.jpg");
+  height: 82%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text button {
+  border: none;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}
+
+/* dark mode */
+li {
+margin-left: 4vh;
+margin-top: 3vh;
+display: block;}
+
+li a {
+	color: white;
+	text-decoration: none;
+	font-size: 2rem;
+	margin-right: 3rem;
+	padding: .3rem;
+}
+
+
+
+.light h2, .light h3{
+	color: #363534;
+}
+
+.light li a:nth-child(2) {
+	background-color: #B7D9B2;
+	color: white;
+	padding: 1rem;
+}
+
+li a:nth-child(1) {
+	background-color: #B7D9B2;
+	color: white;
+	padding: 1rem;
+}
+
+.light li a:nth-child(1) {
+	background-color: #022601;
+	color: white;
+}
+
+body.light {
+	background-color: white;
+}
+/* menu */
+
+nav {
+	background-color: #B7D9B2;
+	width: 80vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 1rem;
+	text-align: center;
+  z-index: 1;
+}
+
+nav.onzichtbaar {
+	display: none;
+}
+
+a.menu1 {
+	display: none;
+}
+
+main {
+	min-height: 10vh;
+	padding: 3rem;
+}
+
+nav a {
+	display: block;
+	text-decoration: none;
+	color: black;
+	font-size: 2rem;
+	margin-bottom: 3rem;
+	margin-top: 10vh;
+}
+
+main{
+  width: 100%;
+  height: auto;
+}
+
+footer{
+	background-color: #022601;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	height: 8vh;
+	width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

@@ -1,0 +1,229 @@
+.grid{
+  display: grid;
+  	grid-template-columns:1fr;
+  	grid-gap: 20px;
+}
+
+.inhoud{
+  background-color: gray;
+  padding: 10px;
+  height: 95%;
+}
+
+p{
+  color: black;
+  top: 5vh;
+  padding-bottom: 5vh;
+}
+
+h3{
+  color: black;
+  font-size: 3vh;
+  margin-top: 1vh;
+}
+
+.inhoud img{
+  width: 100%;
+  height: auto;
+}
+
+button{
+  position: relative;
+  top: -5vh;
+  color: white;
+  padding: 1vh;
+  font-size: 2vh;
+  background-color: #022601;
+  border: none;
+}
+
+
+.inhoud img:hover{
+  animation: zoom 1s;
+       animation-iteration-count: 1;
+}
+
+
+@keyframes zoom{
+      0% {
+        transform:scale(1,1);
+      }
+			100% {
+        transform:scale(1.05,1.05);
+			}
+
+}
+
+
+.inhoud button:hover{
+  animation: button 1s;
+       animation-iteration-count: 1;
+  color: black;
+  background-color: white;
+}
+
+@keyframes button{
+      0% {
+        transform: rotate(0deg);
+        transform: translate(0,0);
+      }
+			25% {
+        transform: rotate(10deg);
+			}
+
+      50% {
+        transform: translate(2vh,0);
+      }
+
+      75% {
+        transform: rotate(-10deg);
+
+      }
+
+      100%{
+        transform: translate(0,0);
+      }
+
+
+}
+
+div.kleur2{
+  margin-left: -8vh;
+  background: #595959;
+  width: 82.7vh;
+  margin-bottom: 5vh;
+}
+
+
+div.kleur1{
+  margin-left: -8vh;
+  background: gray;
+  width: 82.7vh;
+  margin-bottom: 5vh;
+}
+
+.kleur1{
+  padding: 5vh;
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 5vh;
+  grid-column-gap: 2.5vh;
+}
+
+.kleur2{
+  top: 90vh;
+  padding: 5vh;
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 5vh;
+  grid-column-gap: 2.5vh;
+}
+
+
+.kleur1 img, .kleur2 img{
+  width: 100%;
+}
+
+
+@media screen and (min-width: 800px) {
+  .grid{
+    	grid-template-columns:1fr 1fr;
+  }
+
+  .kleur1{
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+               "a a "
+               "b c "
+               "d e";
+
+  }
+  .kleur1 h3{
+  grid-area: a;
+  }
+  .kleur1 img:first-child{
+  grid-area: b;
+  }
+  .kleur1 img:nth-child(2){
+  grid-area: c;
+  }
+  .kleur1 img:nth-child(3){
+  grid-area: d;
+  }
+  .kleur1 img:nth-child(4){
+  grid-area: e;
+  }
+
+
+
+  .kleur2 h3{
+  grid-area: f;
+  }
+  .kleur2 img:first-child{
+  grid-area: g;
+  }
+  .kleur2 img:nth-child(2){
+  grid-area: h;
+  }
+  .kleur2 img:nth-child(3){
+  grid-area: i;
+  }
+  .kleur2 img:nth-child(4){
+  grid-area: j;
+  }
+
+
+  .kleur2{
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+               "f f "
+               "g h"
+               " i j";
+  }
+
+  div.kleur1{
+    margin-left: -8vh;
+    width: 102.3vh;
+  }
+  div.kleur2{
+    margin-left: -8vh;
+    width: 102.3vh;
+  }
+
+}
+
+@media screen and (min-width: 1200px){
+
+  .grid{
+      grid-template-columns:1fr 1fr 1fr 1fr;
+  }
+
+  .kleur1{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+               "a a a a "
+               "b c d e";
+  }
+
+  div.kleur1{
+    margin-left: -8vh;
+    width: 204.7vh;
+  }
+  div.kleur2{
+    margin-left: -8vh;
+    width: 204.7vh;
+  }
+
+
+.kleur2{
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+             "f f f f "
+             "g h i j"
+}
+}
+}
